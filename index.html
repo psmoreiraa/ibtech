@@ -1,92 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pedro Soares Moreira</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: Georgia, serif;
-      background: #fff;
-      color: #111;
-      max-width: 600px;
-      margin: 4rem auto;
-      padding: 0 2rem;
-    }
-
-    .bloco {
-      border: 1px solid #ccc;
-      padding: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .bloco h1 {
-      font-size: 1.8rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .bloco .sub {
-      font-family: monospace;
-      font-size: 0.85rem;
-      color: #666;
-    }
-
-    .bloco h2 {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: #999;
-      margin-bottom: 0.6rem;
-    }
-
-    .bloco p {
-      font-size: 0.95rem;
-      line-height: 1.7;
-      color: #333;
-    }
-
-    .bloco a {
-      color: #111;
-      font-family: monospace;
-      font-size: 0.85rem;
-      display: block;
-      margin-bottom: 0.3rem;
-      text-decoration: none;
-    }
-
-    .bloco a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seu Nome</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- NOME -->
-  <div class="bloco">
-    <h1>Pedro Soares Moreira</h1>
-    <span class="sub">Engenharia da Computação · Ibmec BH · 2026–2029</span>
-  </div>
+  <!-- HEADER -->
+  <header>
+    <h1>Seu Nome</h1>
+    <p>Sua frase curta aqui</p>
 
-  <!-- DADOS -->
-  <div class="bloco">
-    <h2>dados</h2>
-    <p>20 anos · Belo Horizonte, MG</p>
-  </div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#midia">Mídia</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-  <!-- SOBRE -->
-  <div class="bloco">
-    <h2>sobre</h2>
-    <p>Morei no Japão e conheci um novo modo de enxergar o mundo. Estudante entusiasta e fascinado por tecnologia, tanto hardware quanto software, constantemente em busca de aprimorar meus conhecimentos nessa área. Formado na Escola do Sebrae com curso técnico em Administração. Participante destacado da Missão Nova York em 2023, representando o Brasil no Global Innovation Challenge e na feira internacional de empresas simuladas.</p>
-  </div>
+  <!-- MAIN -->
+  <main>
 
-  <!-- CONTATO -->
-  <div class="bloco">
-    <h2>contato</h2>
-    <a href="mailto:pedrosmoreira34@gmail.com">pedrosmoreira34@gmail.com</a>
-    <a href="https://www.linkedin.com/in/pedro-soares-moreira/" target="_blank">linkedin.com/in/pedro-soares-moreira</a>
-  </div>
+    <!-- SOBRE -->
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <p>Fala sobre você aqui...</p>
+      <p>Mais um parágrafo...</p>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+
+    <!-- MIDIA -->
+    <section id="midia">
+      <h2>Mídia</h2>
+
+      <!-- imagens -->
+      <img src="assets/foto1.jpg" alt="Descrição da imagem">
+      <img src="assets/foto2.jpg" alt="Descrição da imagem">
+      <img src="assets/foto3.jpg" alt="Descrição da imagem">
+
+      <!-- vídeo -->
+      <iframe width="300" height="200"
+        src="https://www.youtube.com/embed/SEU_VIDEO"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+      <h2>Contato</h2>
+
+      <p>Email: seuemail@email.com</p>
+
+      <a href="#" target="_blank">LinkedIn</a><br>
+      <a href="#" target="_blank">GitHub</a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 - Seu Nome</p>
+  </footer>
 
 </body>
 </html>
