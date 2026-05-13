@@ -85,11 +85,16 @@ ul {
 
 /* IMAGENS */
 img {
-  width: 100%;
-  max-width: 250px;
-  margin: 10px 5px;
+  width: 250px;
+  height: 180px;
+  object-fit: cover; /* corta sem deformar */
+  margin: 10px;
   border-radius: 8px;
   transition: 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
 }
 
 img:hover {
@@ -113,11 +118,22 @@ a:hover {
 
 /* TERMINAL */
 #terminal-box {
-  background: #3e2f23;
-  color: #f5f1eb;
+  background: #e8dfd6; /* igual aos cards */
+  color: #3e2f23;
   padding: 15px;
   border-radius: 10px;
   font-family: monospace;
+  border: 2px solid var(--primary);
+}
+
+#input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  background: #f5f1eb;
+  color: #3e2f23;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
 }
 
 #input {
