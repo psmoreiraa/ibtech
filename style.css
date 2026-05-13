@@ -23,6 +23,11 @@ body {
   padding: 20px;
 }
 
+
+body {
+  background-color: red;
+}
+
 /* HEADER */
 header {
   text-align: center;
