@@ -101,5 +101,22 @@ footer {
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
+
+  #terminal-box {
+  background: black;
+  color: #00ff00;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: monospace;
+}
+
+#input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  background: black;
+  color: #00ff00;
+  border: none;
+}
   color: #94a3b8;
 }
