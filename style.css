@@ -87,7 +87,10 @@ ul {
 /* MIDIA (imagens + vídeo alinhados) */
 #midia {
   text-align: center;
-    display: flex;
+}
+
+.galeria {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
