@@ -7,16 +7,16 @@
 
 /* VARIÁVEIS (cores) */
 :root {
-  --bg: #f5f1eb;        /* fundo bege claro */
-  --card: #e8dfd6;      /* card */
-  --primary: #a47148;   /* marrom */
-  --secondary: #c8a27a; /* bege mais escuro */
-  --text: #3e2f23;      /* texto */
+  --bg: #f5f1eb;        
+  --card: #e8dfd6;      
+  --primary: #a47148;   
+  --secondary: #c8a27a; 
+  --text: #3e2f23;      
 }
 
 /* BODY */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -30,7 +30,10 @@ header {
 }
 
 header h1 {
+  font-family: 'Playfair Display', serif;
   color: var(--primary);
+  font-size: 2.2rem;
+  letter-spacing: 1px;
 }
 
 header p {
@@ -64,8 +67,15 @@ section {
 
 /* TITULOS */
 h2 {
+  font-family: 'Playfair Display', serif;
   margin-bottom: 10px;
   color: var(--secondary);
+  font-size: 1.5rem;
+}
+
+/* TEXTO */
+p {
+  font-size: 1rem;
 }
 
 /* LISTA */
@@ -79,6 +89,11 @@ img {
   max-width: 250px;
   margin: 10px 5px;
   border-radius: 8px;
+  transition: 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
 }
 
 /* VIDEO */
@@ -96,15 +111,10 @@ a:hover {
   color: var(--primary);
 }
 
-/* FOOTER */
-footer {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 14px;
-
-  #terminal-box {
-  background: black;
-  color: #00ff00;
+/* TERMINAL */
+#terminal-box {
+  background: #3e2f23;
+  color: #f5f1eb;
   padding: 15px;
   border-radius: 10px;
   font-family: monospace;
@@ -114,9 +124,19 @@ footer {
   width: 100%;
   padding: 8px;
   margin-top: 10px;
-  background: black;
-  color: #00ff00;
+  background: #3e2f23;
+  color: #f5f1eb;
   border: none;
 }
+
+#output p {
+  margin: 5px 0;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
   color: #94a3b8;
 }
