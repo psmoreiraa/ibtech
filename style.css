@@ -7,11 +7,11 @@
 
 /* VARIÁVEIS (cores) */
 :root {
-  --bg: #0f172a;          /* fundo azul escuro */
-  --card: #1e293b;        /* cards */
-  --primary: #7c3aed;     /* roxo */
-  --secondary: #38bdf8;   /* azul claro */
-  --text: #e2e8f0;        /* texto */
+  --bg: #f5f1eb;        /* fundo bege claro */
+  --card: #e8dfd6;      /* card */
+  --primary: #a47148;   /* marrom */
+  --secondary: #c8a27a; /* bege mais escuro */
+  --text: #3e2f23;      /* texto */
 }
 
 /* BODY */
