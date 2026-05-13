@@ -14,6 +14,15 @@
   --text: #3e2f23;
 }
 
+/* 🌙 MODO ESCURO */
+.dark {
+  --bg: #1e1b18;
+  --card: #2c2621;
+  --primary: #d6a77a;
+  --secondary: #e6c2a6;
+  --text: #f5f1eb;
+}
+
 /* BODY */
 body {
   font-family: 'Inter', sans-serif;
@@ -26,18 +35,29 @@ body {
 /* HEADER */
 header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 header h1 {
   font-family: 'Playfair Display', serif;
   color: var(--primary);
   font-size: 2.2rem;
-  margin-bottom: 10px; /* espaço extra */
+  margin-bottom: 10px;
 }
 
 header p {
   color: var(--secondary);
+}
+
+/* BOTÃO TEMA */
+#theme-toggle {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
 }
 
 /* NAV */
@@ -64,6 +84,22 @@ section {
   border-radius: 10px;
   border-left: 4px solid var(--primary);
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  /* ANIMAÇÃO */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.6s;
+}
+
+/* QUANDO APARECE */
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HOVER NOS CARDS */
+section:hover {
+  transform: translateY(-5px);
 }
 
 /* TITULOS */
@@ -84,7 +120,7 @@ ul {
   margin-left: 20px;
 }
 
-/* MIDIA (imagens + vídeo alinhados) */
+/* MIDIA */
 #midia {
   text-align: center;
 }
@@ -97,8 +133,7 @@ ul {
   margin-top: 10px;
 }
 
-
-/* IMAGENS E VIDEO IGUAIS */
+/* IMAGENS E VIDEO */
 img, iframe {
   width: 250px;
   height: 180px;
@@ -120,10 +155,25 @@ a:hover {
   color: var(--primary);
 }
 
+/* BOTÃO COPIAR */
+#copy-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+
+#copy-btn:hover {
+  background: var(--secondary);
+}
+
 /* TERMINAL */
 #terminal-box {
-  background: #e8dfd6;
-  color: #3e2f23;
+  background: var(--card);
+  color: var(--text);
   padding: 15px;
   border-radius: 10px;
   border: 2px solid var(--primary);
@@ -134,10 +184,11 @@ a:hover {
   width: 100%;
   padding: 8px;
   margin-top: 10px;
-  background: #f5f1eb;
-  color: #3e2f23;
+  background: var(--bg);
+  color: var(--text);
   border: 1px solid var(--primary);
   border-radius: 5px;
+  caret-color: var(--primary);
 }
 
 #output p {
