@@ -1,31 +1,38 @@
-# Portfólio Pessoal
+# Cartão de Visita — Pedro Soares Moreira
 
-**Nome:** Pedro Soares Moreira
-**Curso:** Engenharia da Computação (Turma 1A)
+> Cartão de visita digital desenvolvido para a trilha Frontend 2026.1 do IbTech.
 
----
+## Sobre
 
-## Descrição
+Página estática com HTML, CSS e JavaScript vanilla. Sem frameworks.
 
-Este projeto é um site de portfólio pessoal desenvolvido para apresentar informações sobre mim, minhas habilidades e formas de contato.
+## Features
 
----
+- Tema claro/escuro com persistência em `localStorage` e suporte a `prefers-color-scheme`
+- Terminal interativo (comandos: `whoami`, `skills`, `contact`, `clear`, `help`)
+- Botão "copiar email" com Clipboard API
+- Animação de entrada das seções via IntersectionObserver
+- Menu hambúrguer responsivo no mobile
+- Responsivo (360px → 1920px)
 
-## Tecnologias utilizadas
+## Tecnologias
 
-* HTML
-* CSS
-* JavaScript
-
----
+- HTML5 semântico
+- CSS3 (variáveis, Flexbox, Media Queries)
+- JavaScript ES6+
 
 ## Como rodar
 
-1. Baixe ou clone o repositório
-2. Abra o arquivo `index.html` no navegador
+```bash
+git clone https://github.com/psmoreiraa/ibtech.git
+cd ibtech
+# abrir index.html no navegador
+```
 
----
-
-## Link do projeto
+## Acesso online
 
 https://psmoreiraa.github.io/ibtech/
+
+## Autor
+
+Pedro Soares Moreira — [LinkedIn](https://www.linkedin.com/in/pedro-soares-moreira) · [GitHub](https://github.com/psmoreiraa)
