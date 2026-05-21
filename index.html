@@ -3,25 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pedro Soares Moreira</title>
+
+  <title>Pedro Soares Moreira — Engenharia da Computação</title>
+  <meta name="description" content="Cartão de visita digital de Pedro Soares Moreira, estudante de Engenharia da Computação no Ibmec.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pedro Soares Moreira — Engenharia da Computação">
+  <meta property="og:description" content="Cartão de visita digital — sobre, habilidades e contato.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:url" content="https://psmoreiraa.github.io/ibtech/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://media.licdn.com/dms/image/v2/D5603AQF-R2Swd5FtmQ/profile-displayphoto-crop_800_800/B56ZoiA4hgJkAM-/0/1761507248932?e=1781136000&v=beta&t=760-DUlhs4RUu-BODYcvNlDXARQuJu6O6wubw5J8AyY">
+
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
   <!-- HEADER -->
   <header>
+    <!-- BLOQUEADOR 1.4: foto de perfil local (coloque assets/avatar.jpg) -->
+    <img class="avatar" src="assets/avatar.jpg" alt="Foto de perfil de Pedro Soares Moreira">
+
     <h1>Pedro Soares Moreira</h1>
-    <p>Engenharia da Computação</p>
+    <p class="subtitle">Estudante de Engenharia da Computação, fascinado por hardware e software.</p>
 
-    <!-- BOTÃO TEMA -->
-    <button id="theme-toggle">🌙</button>
+    <!-- FLAG 2.2: aria-label no botão de tema -->
+    <button id="theme-toggle" aria-label="Mudar para tema escuro">🌙</button>
 
-    <nav>
+    <!-- FLAG 2.5: botão hambúrguer mobile -->
+    <button id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+    <nav id="main-nav">
       <a href="#sobre">Sobre</a>
       <a href="#habilidades">Habilidades</a>
       <a href="#midia">Mídia</a>
+      <a href="#terminal">Terminal</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
@@ -51,38 +69,43 @@
     <!-- MIDIA -->
     <section id="midia">
       <h2>Mídia</h2>
-
       <div class="galeria">
-        <img src="https://media.licdn.com/dms/image/v2/D4E22AQF37ZT0nA7Ovg/feedshare-shrink_1280/B4EZwo20eRIkAc-/0/1770211985745?e=1780531200&v=beta&t=UiLEgCkEZdjDnQjiJFrp84cBFmbYEpXWw_aI5r73_xU" alt="Formatura 2025">
-
-        <img src="https://media.licdn.com/dms/image/v2/D5622AQEKPwZVWSDfqw/feedshare-shrink_1280/feedshare-shrink_1280/0/1722711296191?e=1780531200&v=beta&t=Gj0daMbpXJuNnHXG3KdL9i-CU655-HAjpuAgy0sckLg" alt="Japão 2024">
-
-        <img src="https://media.licdn.com/dms/image/v2/D5622AQGnIi0e0Yl9Ag/feedshare-shrink_1280/B56ZoiEMXGJoAs-/0/1761508118585?e=1780531200&v=beta&t=gsa9t7zLfY8KB18e0GPY3VXjZGYI1y63L0Bk9sqm9fY" alt="Simes 2025">
-
-        <iframe src="https://www.youtube.com/embed/f7SS57LFPco" allowfullscreen></iframe>
+        <!-- BLOQUEADOR 1.4: imagens locais + alt descritivo + loading lazy -->
+        <img src="assets/formatura-2025.jpg" alt="Pedro Soares Moreira durante a formatura do curso técnico em Administração na Escola do Sebrae, 2025" loading="lazy">
+        <img src="assets/japao-2024.jpg" alt="Pedro durante o período que morou no Japão, 2024" loading="lazy">
+        <img src="assets/simes-2025.jpg" alt="Pedro na Missão Nova York representando o Brasil no Global Innovation Challenge, 2025" loading="lazy">
+        <!-- FLAG: title no iframe (acessibilidade) -->
+        <iframe src="https://www.youtube.com/embed/f7SS57LFPco" title="Apresentação em vídeo de Pedro Soares Moreira" allowfullscreen loading="lazy"></iframe>
       </div>
     </section>
 
     <!-- TERMINAL -->
     <section id="terminal">
       <h2>Terminal</h2>
-
       <div id="terminal-box">
-        <p>> Digite um comando:</p>
+        <p>&gt; Digite um comando:</p>
+        <!-- FLAG 2.7: mensagem de boas-vindas com dica do help -->
+        <div id="output">
+          <p>Digite <strong>help</strong> e aperte Enter para ver os comandos disponíveis.</p>
+        </div>
+        <!-- FLAG 2.2: label acessível para o input -->
+        <label for="input" class="sr-only">Comando do terminal</label>
         <input type="text" id="input" placeholder="ex: whoami">
-        <div id="output"></div>
       </div>
     </section>
-    
+
     <!-- CONTATO -->
+    <!-- FLAG 2.3: sem <br><br>, usando flexbox + gap no CSS -->
     <section id="contato">
       <h2>Contato</h2>
-
       <p id="email">Email: pedrosmoreira34@gmail.com</p>
-      <button id="copy-btn">Copiar email</button><br><br>
+      <button id="copy-btn">Copiar email</button>
 
-      <a href="https://www.linkedin.com/in/pedro-soares-moreira" target="_blank">LinkedIn</a><br>
-      <a href="https://github.com/psmoreiraa" target="_blank">GitHub</a>
+      <div class="redes">
+        <!-- BLOQUEADOR 1.1: rel="noopener noreferrer" -->
+        <a href="https://www.linkedin.com/in/pedro-soares-moreira" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/psmoreiraa" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
     </section>
 
   </main>
@@ -93,6 +116,5 @@
   </footer>
 
   <script src="script.js"></script>
-  
 </body>
 </html>
